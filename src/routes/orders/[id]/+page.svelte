@@ -160,12 +160,6 @@
 							<div class="font-medium text-slate-900">{formatDateTime(order.createdAt)}</div>
 						</span>
 					</div>
-					<div class="flex justify-between">
-						<span class="text-slate-600">Terakhir Diperbarui</span>
-						<span class="text-right">
-							<div class="font-medium text-slate-900">{formatDateTime(order.updatedAt)}</div>
-						</span>
-					</div>
 					<div class="border-t border-dashed border-slate-200 pt-3">
 						<div class="flex justify-between text-slate-600">
 							<span>Deadline</span>
@@ -193,10 +187,12 @@
 						<span class="text-slate-600">Berat (kg)</span>
 						<span class="font-medium text-slate-900">{order.weight}</span>
 					</div>
-					<div class="flex justify-between">
-						<span class="text-slate-600">Quantity</span>
-						<span class="font-medium text-slate-900">{order.quantity}</span>
-					</div>
+					{#if order.quantity && order.quantity > 0}
+						<div class="flex justify-between">
+							<span class="text-slate-600">Quantity</span>
+							<span class="font-medium text-slate-900">{order.quantity}</span>
+						</div>
+					{/if}
 					<div class="border-t border-slate-200 pt-3">
 						<div class="flex justify-between">
 							<span class="text-slate-600">Total Harga</span>

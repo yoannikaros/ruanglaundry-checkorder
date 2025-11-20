@@ -27,13 +27,13 @@
  */
 declare module '$env/static/private' {
 	export const AHA_CHROME_CRASHPAD_PIPE_NAME: string;
+	export const AI_AGENT: string;
 	export const ALLUSERSPROFILE: string;
 	export const ANTHROPIC_AUTH_TOKEN: string;
 	export const ANTHROPIC_BASE_URL: string;
 	export const APPDATA: string;
 	export const ChocolateyInstall: string;
 	export const ChocolateyLastPathUpdate: string;
-	export const CLINE_ACTIVE: string;
 	export const COLOR: string;
 	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
@@ -95,6 +95,8 @@ declare module '$env/static/private' {
 	export const PROMPT: string;
 	export const PSModulePath: string;
 	export const PUBLIC: string;
+	export const SAFE_RM_ALLOWED_PATH: string;
+	export const SAFE_RM_DENIED_PATH: string;
 	export const SESSIONNAME: string;
 	export const SystemDrive: string;
 	export const SystemRoot: string;
@@ -103,6 +105,7 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const TMP: string;
+	export const TRAE_AI_SHELL_ID: string;
 	export const USERDOMAIN: string;
 	export const USERDOMAIN_ROAMINGPROFILE: string;
 	export const USERNAME: string;
@@ -144,13 +147,13 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		AHA_CHROME_CRASHPAD_PIPE_NAME: string;
+		AI_AGENT: string;
 		ALLUSERSPROFILE: string;
 		ANTHROPIC_AUTH_TOKEN: string;
 		ANTHROPIC_BASE_URL: string;
 		APPDATA: string;
 		ChocolateyInstall: string;
 		ChocolateyLastPathUpdate: string;
-		CLINE_ACTIVE: string;
 		COLOR: string;
 		COLORTERM: string;
 		CommonProgramFiles: string;
@@ -212,6 +215,8 @@ declare module '$env/dynamic/private' {
 		PROMPT: string;
 		PSModulePath: string;
 		PUBLIC: string;
+		SAFE_RM_ALLOWED_PATH: string;
+		SAFE_RM_DENIED_PATH: string;
 		SESSIONNAME: string;
 		SystemDrive: string;
 		SystemRoot: string;
@@ -220,6 +225,7 @@ declare module '$env/dynamic/private' {
 		TERM_PROGRAM: string;
 		TERM_PROGRAM_VERSION: string;
 		TMP: string;
+		TRAE_AI_SHELL_ID: string;
 		USERDOMAIN: string;
 		USERDOMAIN_ROAMINGPROFILE: string;
 		USERNAME: string;
